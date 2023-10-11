@@ -1,0 +1,97 @@
+.sureAwaySection {
+    background-color: var(--cards-bg-color);
+    display: flex;
+    gap: 24px;
+    width: 900px;
+}
+
+.img{
+    height: 100%;
+    width: 424px;
+    object-fit: cover;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px 24px 24px 0;
+}
+
+.categories{
+    color: var(--accent-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.title {
+    color: var(--dark-color);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.text {
+    color: var(--body-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.footer {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.dateAndAutor {
+    display: flex;
+    gap: 8px;
+}
+
+.date {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.autor {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.timeRead {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+@media (max-width: 1450px) {
+    .sureAwaySection {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .img {
+        width: 100%;
+    }
+    .sureAwaySection {
+        flex-direction: column;
+    }
+    .info {
+        padding: 24px;
+    }
+}

@@ -1,0 +1,155 @@
+.header {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.10);
+}
+.headerContainer {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__mainInformation {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    height: 56px;
+    width: 140px;
+}
+
+.header__phone {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.phone__text {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.phone__number {
+    color: var(--dark-color);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.header__nav {
+    display: flex;
+    gap: 24px;
+}
+
+.header__link {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.header__linkActive::before {
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0880AE;
+}
+
+.header__burger {
+    display: none;
+}
+
+.burger__icon {
+
+}
+
+.burger__list {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.burger__list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.burger__list li:last-child {
+    border-bottom: none;
+}
+
+.sub__list {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sub__list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.sub__list li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 1400px) {
+    .headerContainer {
+        max-width: 1280px;
+     }
+}
+
+@media (max-width: 1300px) {
+    .headerContainer {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .headerContainer {
+        max-width: 800px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+}
+
+@media (max-width: 880px) {
+    .headerContainer {
+        max-width: 600px;
+    }
+}
